@@ -1,7 +1,7 @@
 
 def stegnog(text):
     
-    res = ''.join(format(i, 'b') for i in bytearray(text, encoding ='utf-8'))
+    res = ''.join(format(i, 'b') for i in bytearray(text, encoding ='utf-8'))     #coverting text into binary format
     print(res)
     print("The string after binary conversion : " + (res)) 
     print(res[3])
@@ -25,7 +25,7 @@ def stegnog(text):
     # read line
         data = file1.readline()
         if(count<length):   
-            if(res[count]=='1'):       
+            if(res[count]=='1'):       #changing letter from lower case to uppper case whenever we get 1 in our binary no. which we have to hide
                 data=data[0].lower() + data[1:] 
         file2.write(data)
         count=count+1
@@ -40,7 +40,7 @@ def desteg():
         data = file2.readline()
         if not data:
             break
-        if(data[0].isupper()):
+        if(data[0].isupper()):           #getting hidden message from text file by checking letter in word is lower or upper case
             crypto=crypto+'0'
         else:
             crypto=crypto+'1'
