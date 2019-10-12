@@ -1,5 +1,5 @@
 # Text-Steganography
-The code is using text steganography to hide the message in a text file which is a poem in our case.
+The code is using text steganography to hide the message in a text file which is a poem in this case.
 
 ## Coversion of Plaintext Message into binary Format
 The message to be hidden is converted to binary format on the basis of their ASCII values
