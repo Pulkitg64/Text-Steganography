@@ -17,7 +17,8 @@ We read our file line by line and bits of message bit by bit
 + If current bit is zero, then first letter of line is converted to lowercase
 + If current bit is one, then first letter of the line is converted to uppercase
 
-	```count = 0
+	```
+  count = 0
   while True:
     data = file1.readline()
     if(count<length):
